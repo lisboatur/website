@@ -114,11 +114,6 @@
                                  alt="Serra da Estrela, Portugal" class="img-fluid">
                             <p class="text-center">Serra da Estrela</p>
                         </div>
-<!--                        <div class="col-6">-->
-<!--                            <img src="image/braga.png"-->
-<!--                                 alt="Braga, Portugal" class="img-fluid">-->
-<!--                            <p class="text-center">Braga</p>-->
-<!--                        </div>-->
                         <div class="col-6">
                             <img src="image/guimaraes.png"
                                  alt="Braga / Guimarães, Portugal" class="img-fluid">
@@ -198,78 +193,6 @@
     </div>
 </div>
 
-
-<!-- Feature End -->
-
-
-<!--    &lt;!&ndash; Destination Start &ndash;&gt;-->
-<!--    <div class="container-fluid py-5">-->
-<!--        <div class="container pt-5 pb-3">-->
-<!--            <div class="text-center mb-3 pb-3">-->
-<!--                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>-->
-<!--                <h1>Explore Top Destination</h1>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-1.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">United States</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-2.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">United Kingdom</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-3.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">Australia</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-4.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">India</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-5.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">South Africa</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-md-6 mb-4">-->
-<!--                    <div class="destination-item position-relative overflow-hidden mb-2">-->
-<!--                        <img class="img-fluid" src="img/destination-6.jpg" alt="">-->
-<!--                        <a class="destination-overlay text-white text-decoration-none" href="">-->
-<!--                            <h5 class="text-white">Indonesia</h5>-->
-<!--                            <span>100 Cities</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash; Destination Start &ndash;&gt;-->
-
-
 <!-- Service Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
@@ -316,103 +239,272 @@
             <h1>Pefect Tour Packages</h1>
         </div>
         <div class="row">
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Porto</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>8 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Discover Porto's historic streets, vibrant culture, and scenic beauty</a>
+
+                        <i class="h5 text-decoration-none">Discover Porto's historic streets,
+                            vibrant culture, and scenic beauty</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$175 EUR </h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $240 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€240 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€280</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€360</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Aveiro</small>
-                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>8 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 hours</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">"Experience Aveiro's allure: picturesque canals, colorful boats, and coastal tranquility.</a>
+
+                        <i class="h5 text-decoration-none">Experience Aveiro's allure: picturesque canals, colorful boats, and coastal tranquility.</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$275 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $340 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€340 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€400</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€500</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Douro</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Explore Douro's enchantment: vineyard-covered hills, river cruises, and rich wine heritage.</a>
+
+                        <i class="h5 text-decoration-none">Explore Douro's enchantment: vineyard-covered hills, river cruises, and rich wine heritage.</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$350 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $370 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€370 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€470</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€620</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Fátima / Batalha</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Connect with divine and historical wonders: Fátima's spirituality and Batalha's majestic architecture.</a>
+
+                        <i class="h5 text-decoration-none">Connect with divine and historical wonders: Fátima's spirituality and Batalha's majestic architecture.</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$350 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $380 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€380 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€440</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€580</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Serra da Estrela</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Ascend to greatness at Serra da Estrela: majestic peaks, winter sports, and breathtaking landscapes.</a>
+
+                        <i class="h5 text-decoration-none">Ascend to greatness at Serra da Estrela: majestic peaks, winter sports, and breathtaking landscapes.</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$300 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $375 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€375 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€440</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€520</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Braga / Guimarães</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>8 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Embark on a dual journey: Braga's charm meets Guimarães' medieval allure.</a>
+
+                        <i class="h5 text-decoration-none"><a class="h5 text-decoration-none" href="">Embark on a dual journey: Braga's charm meets Guimarães' medieval allure.</a></i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$200 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $340 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€340 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">€400</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€500</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
@@ -420,23 +512,52 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-4"></div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="package-item bg-white mb-2">
+                <div class="package-item bg-white mb-2" onclick="togglePrices(this)">
                     <div class="p-4">
+
                         <div class="d-flex justify-content-between mb-3">
                             <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Gerês</small>
                             <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 hours</small>
-                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
+                            <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>1~7 People</small>
                         </div>
-                        <a class="h5 text-decoration-none" href="">Discover natural wonders in Gerês: lush landscapes, cascading waterfalls, and outdoor adventures.</a>
+
+                        <i class="h5 text-decoration-none">Discover natural wonders in Gerês: lush landscapes, cascading waterfalls, and outdoor adventures.</i>
+
                         <div class="border-top mt-4 pt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="m-0">$300 EUR</h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="m-0">From $370 EUR</h5>
+                                <small class="m-0"><i
+                                        class="fas fa-dollar-sign text-primary mr-2"></i>
+                                    <a onclick="#">Prices</a>
+                                    <i class="fas fa-caret-down ml-1"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="prices" style="opacity: 0; display: none;">
+                            <br/>
+                            <div class="pricing-option">
+                                <h5 class="m-0">Up to 2 people</h5>
+                                <p>€370 (total price)</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">3 to 4 people</h5>
+                                <p class="price">460</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">5 to 7 people</h5>
+                                <p class="price">€570</p>
+                            </div>
+                            <div class="pricing-option">
+                                <h5 class="m-0">7+ people</h5>
+                                <p class="price">By quote.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4"></div>
+
+
 
         </div>
     </div>
@@ -500,142 +621,6 @@
         </div>
     </div>
 </div>
-
-<!-- Registration End -->
-
-
-<!--    &lt;!&ndash; Team Start &ndash;&gt;-->
-<!--    <div class="container-fluid py-5">-->
-<!--        <div class="container pt-5 pb-3">-->
-<!--            <div class="text-center mb-3 pb-3">-->
-<!--                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Guides</h6>-->
-<!--                <h1>Our Travel Guides</h1>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">-->
-<!--                    <div class="team-item bg-white mb-4">-->
-<!--                        <div class="team-img position-relative overflow-hidden">-->
-<!--                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">-->
-<!--                            <div class="team-social">-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="text-center py-4">-->
-<!--                            <h5 class="text-truncate">Guide Name</h5>-->
-<!--                            <p class="m-0">Designation</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">-->
-<!--                    <div class="team-item bg-white mb-4">-->
-<!--                        <div class="team-img position-relative overflow-hidden">-->
-<!--                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">-->
-<!--                            <div class="team-social">-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="text-center py-4">-->
-<!--                            <h5 class="text-truncate">Guide Name</h5>-->
-<!--                            <p class="m-0">Designation</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">-->
-<!--                    <div class="team-item bg-white mb-4">-->
-<!--                        <div class="team-img position-relative overflow-hidden">-->
-<!--                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">-->
-<!--                            <div class="team-social">-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="text-center py-4">-->
-<!--                            <h5 class="text-truncate">Guide Name</h5>-->
-<!--                            <p class="m-0">Designation</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">-->
-<!--                    <div class="team-item bg-white mb-4">-->
-<!--                        <div class="team-img position-relative overflow-hidden">-->
-<!--                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">-->
-<!--                            <div class="team-social">-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>-->
-<!--                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="text-center py-4">-->
-<!--                            <h5 class="text-truncate">Guide Name</h5>-->
-<!--                            <p class="m-0">Designation</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash; Team End &ndash;&gt;-->
-
-
-<!-- Testimonial Start -->
-<!--    <div class="container-fluid py-5">-->
-<!--        <div class="container py-5">-->
-<!--            <div class="text-center mb-3 pb-3">-->
-<!--                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>-->
-<!--                <h1>What Say Our Clients</h1>-->
-<!--            </div>-->
-<!--            <div class="owl-carousel testimonial-carousel">-->
-<!--                <div class="text-center pb-4">-->
-<!--                    <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >-->
-<!--                    <div class="testimonial-text bg-white p-4 mt-n5">-->
-<!--                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam-->
-<!--                        </p>-->
-<!--                        <h5 class="text-truncate">Client Name</h5>-->
-<!--                        <span>Profession</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="text-center">-->
-<!--                    <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" >-->
-<!--                    <div class="testimonial-text bg-white p-4 mt-n5">-->
-<!--                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam-->
-<!--                        </p>-->
-<!--                        <h5 class="text-truncate">Client Name</h5>-->
-<!--                        <span>Profession</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="text-center">-->
-<!--                    <img class="img-fluid mx-auto" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" >-->
-<!--                    <div class="testimonial-text bg-white p-4 mt-n5">-->
-<!--                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam-->
-<!--                        </p>-->
-<!--                        <h5 class="text-truncate">Client Name</h5>-->
-<!--                        <span>Profession</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="text-center">-->
-<!--                    <img class="img-fluid mx-auto" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" >-->
-<!--                    <div class="testimonial-text bg-white p-4 mt-n5">-->
-<!--                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam-->
-<!--                        </p>-->
-<!--                        <h5 class="text-truncate">Client Name</h5>-->
-<!--                        <span>Profession</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!-- Testimonial End -->
-
-
 <!-- Footer Start -->
 <div class="container-fluid bg-dark " style="margin-top: 90px; ">
     <div class="row pt-5 px-xl-5 center">
@@ -658,49 +643,9 @@
                    class="btn btn-outline-primary btn-square"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
-        <!--            <div class="col-lg-3 col-md-6 mb-5">-->
-        <!--                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>-->
-        <!--                <div class="d-flex flex-column justify-content-start">-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>About</a>-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>Destination</a>-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>Services</a>-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>Packages</a>-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>Guides</a>-->
-        <!--                    <a class="text-white-50 mb-2" ><i class="fa fa-angle-right mr-2"></i>Testimonial</a>-->
-        <!--                    <a class="text-white-50" ><i class="fa fa-angle-right mr-2"></i>Blog</a>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-lg-3 col-md-6 mb-5">-->
-        <!--                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>-->
-        <!--                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>-->
-        <!--                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>-->
-        <!--                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>-->
-        <!--                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>-->
-        <!--                <div class="w-100">-->
-        <!--                    <div class="input-group">-->
-        <!--                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">-->
-        <!--                        <div class="input-group-append">-->
-        <!--                            <button class="btn btn-primary px-3">Sign Up</button>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
+
     </div>
 </div>
-<!--    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">-->
-<!--                <p class="m-0 text-white-50">Copyright &copy; <a >Domain</a>. All Rights Reserved.</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="col-lg-6 text-center text-md-right">-->
-<!--                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!-- Footer End -->
-
 
 <!-- Back to Top -->
 <a class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -721,6 +666,42 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script>
+function togglePrices(element) {
+    const targetClass = 'prices'; // Class of the div to toggle visibility
+    const pricesDiv = element.querySelector('.' + targetClass); // Use querySelector for efficiency
+
+    if (pricesDiv.style.opacity === '0' || pricesDiv.style.display === 'none') {
+        fadeIn(pricesDiv);
+    } else {
+        fadeOut(pricesDiv);
+    }
+}
+
+function fadeIn(element) {
+    element.style.display = 'block';
+    let opacity = 0;
+    const fadeInInterval = setInterval(() => {
+        opacity += 0.1;
+        element.style.opacity = opacity;
+        if (opacity >= 1) {
+            clearInterval(fadeInInterval);
+        }
+    }, 50);
+}
+
+function fadeOut(element) {
+    let opacity = 1;
+    const fadeOutInterval = setInterval(() => {
+        opacity -= 0.1;
+        element.style.opacity = opacity;
+        if (opacity <= 0) {
+            clearInterval(fadeOutInterval);
+            element.style.display = 'none';
+        }
+    }, 50);
+}
+</script>
 </body>
 
 </html>
